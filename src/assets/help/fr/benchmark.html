@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Comparer</h3>
+
+<p>Cette commande permet de comparer les performances de compression et d&eacute;compression RAR sur diff&eacute;rentes plates-formes mat&eacute;rielles. Les versions identiques de WinRAR et RAR pour Android partagent essentiellement le m&ecirc;me code de base de r&eacute;f&eacute;rence. Seule une partie de l&apos;interface de comparaison sous Android utilise Java. Les op&eacute;rations intensives sur le processeur sont effectu&eacute;es en code natif, ainsi la performance de la machine virtuelle Java n&apos;est pas mesur&eacute;e.</p>
+
+<p>La premi&egrave;re &eacute;tape de l&apos;algorithme g&eacute;n&egrave;re un flux de nombres al&eacute;atoires avec une relative faible redondance, proche des conditions permettant les moins bonnes performances de RAR. Ce flux est pass&eacute; &agrave; travers les algorithmes de compression et d&eacute;compression de RAR. La d&eacute;compression obtenue est compar&eacute;e avec les donn&eacute;es d&apos;origine. En cas de diff&eacute;rence trouv&eacute;e, &quot;Erreurs trouv&eacute;es: Oui&quot; s&apos;affiche. Ces erreurs peuvent venir de probl&egrave;mes mat&eacute;riels comme la fiabilit&eacute; de la m&eacute;moire. Cependant, n&apos;attendez pas de cette commande qu&apos;elle remplace des logiciels de diagnostic sp&eacute;cialis&eacute;s. Son but est la comparaison, pas le test du mat&eacute;riel.</p>
+
+<p>La fen&ecirc;tre de commande contient &eacute;galement la taille des donn&eacute;es trait&eacute;es, le temps &eacute;coul&eacute; et la vitesse de compression, en cours et une fois termin&eacute;e, en kilo-octets par seconde. La vitesse r&eacute;sultante est calcul&eacute;e en tant que vitesse maximale pour la p&eacute;riode de surveillance d&eacute;finie et n&apos;est pas mise &agrave; jour une fois fix&eacute;e. Le temps pour d&eacute;terminer la vitesse r&eacute;sultante peut s&apos;av&eacute;rer plus long pour un mat&eacute;riel plus lent.</p>
+
+<p>La commande Comparer utilise la version multi-t&acirc;ches de compression de RAR et les impl&eacute;mentations mono t&acirc;che des autres algorithmes, comme pour la d&eacute;compression et la g&eacute;n&eacute;ration de nombres al&eacute;atoires. La compression &eacute;tant source de plus de recours au processeur, la performance obtenue d&eacute;pend sensiblement du nombre de c&oelig;urs de processeur disponibles. Par d&eacute;faut, tous les c&oelig;urs disponibles sont utilis&eacute;s, mais si vous souhaitez voir les r&eacute;sultats pour un seul c&oelig;ur ou un nombre limit&eacute; de c&oelig;urs de processeurs, vous pouvez appuyer sur le champ &quot;nombre de t&acirc;ches&quot; pour red&eacute;marrer les mesures avec un autre nombres de t&acirc;ches.</p>
+
+<p>Il n&apos;est pas garanti que diff&eacute;rentes versions de RAR obtiennent les m&ecirc;mes valeurs de vitesse de compression. Si vous utilisez cette commande pour comparer la performance de diff&eacute;rents p&eacute;riph&eacute;riques, assurez-vous que vous ex&eacute;cutez la m&ecirc;me version de RAR dans tous les tests.</p>
+
+<p>La commande Comparer ne se termine jamais automatiquement, vous devez y mettre fin manuellement. Elle n&apos;utilise pas d&apos;enregistrement permanent, toutes les op&eacute;rations sont effectu&eacute;es dans la m&eacute;moire.</p>
+
+</html>

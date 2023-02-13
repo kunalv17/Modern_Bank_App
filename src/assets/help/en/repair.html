@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Repair archive</h3>
+
+<p>Repair damaged archive. Repairs an opened archive if invoked inside
+of archive. Repairs selected archives if invoked outside of archive,
+when browsing files.</p>
+
+<p>Only RAR and ZIP archives can be repaired. Source archive is not changed
+and result of operation is stored into a new archive, which is named
+fixed.arcname.rar, rebuilt.arcname.rar or rebuilt.arcname.zip,
+where 'arcname' is the original archive name.</p>
+
+<p>Success of "Repair" operation depends on the archive type and type
+and size of damaged area. Chance of successful RAR archive repair
+is significantly higher if recovery record was added when creating this
+archive. If archive does not contain the recovery record, chances
+are lower, especially for solid archives and no repair is possible
+for archives with encrypted file names.</p>
+
+<p>If you press or select .rev recovery volume instead of archive
+when starting "Repair" command, RAR will attempt to reconstruct
+missing RAR volumes using recovery volumes. It is necessary to place
+all available .rar and .rev volumes to same folder before starting
+reconstruction.</p>
+
+</html>

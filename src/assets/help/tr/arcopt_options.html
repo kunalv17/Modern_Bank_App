@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Arşivleme tercîhleri: Tercîhler</h3>
+
+<h4>Arşivlenmiş dosyaları test et</h4>
+<p>Dosyaları arşivlendikten sonra test eder. Bu tercîh bilhassa
+"Dosyaları arşivledikten sonra sil" tercîhi de fa'âl ise kullanışlıdır. Bu vaziyette dosyalar sadece
+arşiv başarılı bir şekilde test edildiyse silinir.</p>
+
+<h4>Ayrı arşivler oluştur</h4>
+<p>Her seçili dosyayı ve klasörü münferid bir arşive koyar.
+Arşiv isimleri uygun arşiv uzantısını müteakip seçili unsur ismi olarak oluşturulur.</p>
+
+<h4>BLAKE2 dosya sağlamasını kullan</h4>
+<p>RAR arşivindeki dosya verisinin bütünlüğü her arşivlenmiş dosya için
+hesaplanan ve depolanan sağlamalar tarafından muhafaza edilmektedir. RAR, 32 bit uzunluğundaki
+CRC32 sağlamasını varsayılan olarak kullanır. Bu tercîh fa'âl ise, CRC32 yerine 256 bit BLAKE2sp kullanılır.
+CRC32 pek çok hatâyı tespit etmek için yeterli olduğu hâlde BLAKE2
+daha yavaş hesaplama ve nispeten daha büyük arşiv boyutu pahasına
+daha da iyi hatâ tespit etme husûsîyetlerine sâhibtir. Bu tercîh sadece RAR 5.0 biçimdeki arşivler için müsâiddir.</p>
+
+<h4>Arşivleme müddetini göster</h4>
+<p>Arşivleme işlemi başarılı bir şekilde tamamlandığı vakit toplam arşivleme müddetini
+ihtivâ eden bir iletişim kutusu gösterir. Farklı arşivleme modlarını
+kıyaslarken faydalı olabilir.</p>
+
+<h4>Arşiv ismi maskesi</h4>
+<p>Bir arşiv oluşturulurken mevcûd târih dizgesini arşiv isminin sonuna ilâve eder.
+Günlük yedeklemeler için faydalıdır. Târih dizgesi aşağıdaki karakterleri ihtivâ edebilen muayyen bir maske tarafından
+şekillendirilmektedir:
+</p>
+
+<table border=1 cellspacing=0 cellpadding=1>
+
+<tr>
+<td><b>Y</b></td>
+<td>sene</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>ay</td>
+</tr>
+
+<tr>
+<td><b>MMM</b>&nbsp;</td>
+<td>metin hâlinde ay (Oca, Şub, vesaire)</td>
+</tr>
+
+<tr>
+<td><b>W</b></td>
+<td>hafta sayısı (bir hafta Pazartesi ile başlar)</td>
+</tr>
+
+<tr>
+<td><b>A</b></td>
+<td>haftanın günü (Pazartesi 1, Pazar 7'dir)</td>
+</tr>
+
+<tr>
+<td><b>D</b></td>
+<td>ayın günü</td>
+</tr>
+
+<tr>
+<td><b>E</b></td>
+<td>senenin günü</td>
+</tr>
+
+<tr>
+<td><b>H</b></td>
+<td>saât</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>dakika (saâtten sonra gelirse dakika olarak muamele edilir)</td>
+</tr>
+
+<tr>
+<td><b>I</b></td>
+<td>dakika (saâtin yeri dikkate alınmadan dakika olarak muamele edilir)</td>
+</tr>
+
+<tr>
+<td><b>S</b></td>
+<td>sâniye</td>
+</tr>
+
+<tr>
+<td><b>N</b></td>
+<td>arşiv sayısı (1'den itibaren nümerik değer).
+<br>Arşivleme yapılırken RAR, oluşturulan isme sâhib olan mevcûd arşivi
+arar ve bulursa, kullanılmayan bir isim oluşturana kadar arşiv rakamını
+artırır. 'N' biçim karakteri cilt oluştururken desteklenmemektedir.</br>
+</td>
+</tr>
+</table>
+
+<p>Yukarıda listelenmiş biçim dizgesi karakterlerinin her biri arşiv ismine ilâve edilen karakterlerden
+bir tanesini temsîl eder. Mesela, 2 haneli hafta rakamı için WW, 4 haneli sene için YYYY kullanabilirsiniz.</p>
+
+<p>Biçim dizgesindeki ilk karakter '+' ise, târih dizgesinin ve temel arşiv isminin yerleri değiş tokuş edilir,
+yani bir târih arşiv isminin önünde yer alır.</p>
+
+<p>Biçim dizgesi '{' ve
+'}' karakterleri tarafından çevrelenmiş olan tercîhe bağlı bir metin ihtivâ edebilir. Bu metin arşiv ismine yerleştirilir.</p>
+
+<p>Biçim dizgesinin bütün diğer karakterleri arşiv ismine değiştirilmeden ilâve edilir.</p>
+
+</html>

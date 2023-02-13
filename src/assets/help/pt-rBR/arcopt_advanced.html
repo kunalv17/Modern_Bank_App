@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Opções de Compressão: Avançado</h3>
+
+<h4>Compressão</h4>
+<p>Escolha entre os métodos "Armazenar sem compressão", "Mais rápido", "Rápido", "Normal",
+"Bom" e "Melhor". "Armazenar" grava arquivos para arquivar na velocidade máxima
+e sem compressão. Para cada método seguinte a taxa de compressão se torna mais elevada
+e com velocidade mais baixa, quando se passa de "Mais rápido" para "Melhor". Esta é a única
+opção disponível para arquivos RAR e ZIP na página de diálogo, outras opções
+são apenas para arquivos RAR.</p>
+
+<h4>Dicionário</h4>
+<p>Tamanho da área de memória para encontrar e comprimir padrões repetidos
+no processamento de dados. Um dicionário maior pode melhorar a taxa de compressão
+de arquivos grandes, especialmente ao criar um arquivo sólido. Porém, dicionário
+maior também diminui a velocidade de compressão e aumenta os requisitos de memória.
+Valores de tamanho propostos do dicionário dependem da quantidade de memória disponível.
+Você poderá selecionar um maior dicionário se houver mais memória disponível. O tamanho
+máximo do dicionário RAR 4.x é de 4MB.</p>
+
+<h4>Registro de recuperação</h4>
+<p>Adicione o registro de recuperação, o que pode ajudar o comando "Reparar" a restaurar
+um arquivo em caso de danos. O tamanho do registro de recuperação é especificado
+em porcentagem do tamanho do arquivo. Um registro maior de recuperação permite restaurar
+uma área danificada maior, mas aumenta o tamanho do arquivo e precisa de mais tempo
+para ser criado. Geralmente 3 - 10% do tamanho do arquivo é uma escolha razoável.</p>
+
+<h4>Tamanho do volume</h4>
+<p>É possível criar um arquivo composto por vários arquivos. Esse arquivo é chamado de
+múltiplos volumes e os arquivos individuais que compõem este arquivo são conhecidos como
+volumes. Aqui você pode especificar o tamanho de um único volume em um arquivo de
+múltiplos volumes.</p>
+
+<h4>Pausa depois de cada volume</h4>
+<p>Pede uma confirmação antes de criar cada volume. É seguro para alteração
+de mídia com volume já criado, onde esse pedido é apresentado. Esta opção é ignorada
+se o tamanho do volume não for especificado.</p>
+
+<h4>Volumes de recuperação</h4>
+<p>Define um número de volumes de recuperação de um arquivo de múltiplos volumes.
+Ao extrair um arquivo, cada volume de recuperação (extensão .rev) permite
+reconstruir um arquivo de volume ausente usualmente (extensão .rar). O número de volumes
+de recuperação deve ser menor do que o número de volumes RAR habituais e que seja
+reduzido automaticamente, se necessário. Esta opção é ignorada se o tamanho do volume
+não for especificado. Você precisa colocar todos os volumes .rev e .rar disponíveis
+na mesma pasta para permitir a reconstrução de volumes .rar ausentes. Também é possível
+reconstruir volumes ausentes sem extração, basta selecionar um dos arquivos .rev na
+lista de arquivos e ativar o comando "Reparar" ou tocar no nome do arquivo .rev.</p>
+
+</html>

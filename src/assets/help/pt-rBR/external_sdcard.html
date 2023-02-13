@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Suporte ao cartão SD externo</h3>
+
+<p>Este tópico está relacionado apenas aos cartões SD externos removíveis 
+em dispositivos Android 4.4. O RAR pode gravar em qualquer local de interno 
+do Cartão SD.</p>
+
+<p>No Android 4.4, apenas aplicativos pré-instalados pelo hardware
+do fabricante pode gravar em pastas arbitrárias do cartão SD externo.
+Outros aplicativos, incluindo o RAR estão autorizados a gravar apenas único
+aplicativo para a pasta específica no cartão externo e limitado apenas a 
+acesso de leitura para outras pastas do cartão externo. Para o RAR a pasta 
+gravável do cartão externo é "Android/data/com.rarlab.rar". O RAR propõe a 
+subpasta "arquivos" desta pasta para armazenar arquivos comprimidos e arquivos 
+e usa o nome "Cartão SD externo principal" para essa pasta. Supondo que um cartão 
+SD externo esteja disponível em /storage/extSdCard (pode variar em diferentes 
+dispositivos), o nome completo do cartão SD externo principal será
+/storage/extSdCard/Android/data/com.rarlab.rar/files.</p>
+
+<p>Para dispositivos com cartão SD externo e Android 4.4 links para pasta raiz
+do  cartão SD (somente leitura) e para cartão SD externo principal (gravável) 
+são adicionados para "Favoritos" no <a href="navigation_panel.html">painel de 
+navegação</a> depois da nova instalação do RAR. Além disso, você pode forçar 
+o RAR a criar esses links apagando todos os itens favoritos no painel de 
+navegação.</p>
+
+<p>Quando você desinstalar ou limpar os dados do RAR no gerenciador de 
+aplicativos do Android, o conteúdo da pasta principal do cartão SD externo e 
+suas subpastas serão completamente apagadas. Copie todos os arquivos 
+importantes da pasta para outro local antes de realizar essas ações.</p>
+
+</html>

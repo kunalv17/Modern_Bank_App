@@ -1,0 +1,18 @@
+﻿<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>外部 SD 卡支持</h3>
+
+<p>本主题仅涉及到 Android 4.4 上的可移动的外部 SD 卡。其它 Android 版本不限制写入外部卡。内部卡是完全可写的，无论是什么 Android 版本。</p>
+
+<p>在 Android 4.4 中，只有预先安装的硬件制造商的应用程序可以写入外部 SD 卡的任意文件夹。其它应用程序包括 RAR 仅允许在外部卡上写入单个应用程序特定文件夹，并限制只能访问外部卡上的其它文件夹。RAR 可写入外部卡文件夹为“Android/data/com.rarlab.rar”。RAR 提出此文件夹的“files”子文件夹来存储压缩文件和文件，并使用“外部 SD 卡主页”来命名此文件夹。假设一个外部 SD 可用于 /storage/extSdCard（不同的设备会有不同），这样的外部 SD 卡主页全名为 /storage/extSdCard/Android/data/com.rarlab.rar/files。</p>
+
+<p>对于带有外部 SD 卡和 Android 4.4 链接到外部 SD 卡根文件夹（只读）和外部 SD 卡主页（可写）的设备，全新安装 RAR 后将被添加到<a href="navigation_panel.html">导航面板</a>的“收藏”中。您也可以通过删除导航面板中的所有收藏项目来强行 RAR 创建这些链接。</p>
+
+<p>请注意，当您在 Android 的应用程序管理器卸载 RAR 或清除 RAR 数据，外部 SD 卡主文件夹和其子文件夹将被完全删除。在执行这样的操作之前，请将重要文件从此文件夹中复制到其它位置。</p>
+
+</html>

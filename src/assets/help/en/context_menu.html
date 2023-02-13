@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Context menu</h3>
+
+<p>Long press any file list item to display this menu. If nothing
+was selected before, pressed item is selected automatically.
+If you long press the top file list item and nothing was selected,
+all items are selected automatically.</p>
+
+<p>Context menu contains extraction, archiving, new folder, delete,
+rename commands and clipboard operations. Extraction is available inside
+of archive or if only a single archive is selected. Archiving
+and new folder items are available in file mode, but not inside of archive.
+"Open as archive" item is displayed for files with non-archive extension
+and archive data, such as .apk. By default such files are opened
+in associated application, but this command opens them as usual archive.</p>
+
+<p>Using "Copy to clipboard", "Cut" and "Paste" commands it is possible
+to copy selected files and folders from one folder to another, add them to
+archive and extract them from archive. At least one of source and destination
+locations for copy and paste must be a file folder, they cannot be inside of
+archives both. "Cut" command supported for usual files and folders, but not
+inside of archives.</p>
+
+<p>If you copy a single file or folder to clipboard and then paste it
+to its own folder repeatedly, it is copied to a new name, with incremental
+counter after the name part. For example, filename.ext will be copied
+as filename1.ext, filename2.ext and so on.</p>
+
+<p>RAR uses its own clipboard not shared with other Android applications
+for file operations.</p>
+
+</html>

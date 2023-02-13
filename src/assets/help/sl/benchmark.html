@@ -1,0 +1,47 @@
+﻿<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Primerjalna vrednost</h3>
+
+<p>Ta ukaz omogoča primerjavo učinkovitosti stiskanja in razširjanja RAR na
+različnih platformah strojne opreme. Isti različici WinRAR in Android RAR imata
+v osnovi enako jedrno kodo meritve. Java uporablja samo uporabniški vmesnik, ki
+je namenjen meritvam z Androidom. Intenzivne operacije CPE delujejo kot izvorna 
+koda, zato se ne primerja zmogljivost navideznega stroja Java.</p>
+
+<p>Prva faza algoritma ustvari tok psevdonaključnih števil s sorazmerno nizko 
+odvečnostjo, kar je blizu najslabšemu primeru glede na RAR. Ta tok se prenaša z 
+algoritmi stiskanja in razširjanja RAR. Izhod iz razširjanja se primerja z 
+izvornimi podatki. Če se ugotovi kakšna razlika, se sporoči 'Najdene napake: Da'.
+Takšne napake lahko kažejo na težave s strojno opremo, kot je nezanesljiv 
+pomnilnik. Ne pričakujte, da bo ta ukaz nadomestil specializirano diagnostično
+programsko opremo. Njegov namen je primerjalna analiza, ne papreizkušanje 
+strojne opreme.</p>
+
+<p>Tudi ukazno okno vsebuje velikost obdelanih podatkov, potekel čas in hitrost
+stiskanja, tok in rezultat, v kilobajtih na sekundo.
+Nastala hitrost se izračuna kot največja hitrost omejenega obdobja spremljanja
+in se ne posodobi enkrat, ko je nastavljena. Trajanje obdobja za določitev 
+hitrosti je lahko daljše za počasnejšo strojno opremo.</p>
+
+<p>Primerjalna vrednost uporablja več-nitno različico stiskanja RAR in enojno 
+nitenje drugih algoritmov, na primer razširjanje in ustvarjanje naključnih števil.
+Ker je stiskanje najbolj intenzivno v CPE, je posledično zmogljivost opazno 
+odvisna od številnih jeder CPE. Privzeto se uporabljajo vsa razpoložljiva jedra, 
+če pa želite videti rezultate enega jedra ali omejeno število jeder CPE, lahko
+tapnete na polje 'Število niti', da znova zaženete meritve z drugo številko niti.</p>
+
+<p>Ni zagotovljeno, da bodo različne različice RAR poročale o enakih vrednostih 
+hitrosti stiskanja zato, če za primerjavo uporabite ta ukaz za primerjanje
+delovanja različnih naprav, zagotovite, da uporabljate isto različico RAR-a pri
+vseh preverjanjih.</p>
+
+<p>Ukaz 'Primerjava vrednosti' se nikoli ne donča samodejno in ga je potrebno
+ročno zapreti. Ne uporablja nobenega trajnega shranjevanjambe. Vse operacije se
+izvajajo v pomnilniku.</p>
+
+</html>

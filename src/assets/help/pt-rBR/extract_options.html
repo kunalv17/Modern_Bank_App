@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Opções de extração</h3>
+
+<p>Se o comando de extração é chamado de dentro do arquivo, enquanto 
+navega o conteúdo do arquivo, ele irá descomprimir os arquivos e pastas 
+selecionados neste arquivo. Se nada estiver selecionado, o RAR selecionará 
+automaticamente todo o conteúdo do arquivo.</p>
+
+<p>Se a extração é chamada de fora do arquivo comprimido, enquanto navega 
+habitualmente nos arquivos não comprimidos, os arquivos selecionados são 
+considerados arquivos comprimidos e processados ​​com a descompressão. Se as 
+pastas são selecionadas, o RAR irá procurá-los de forma recursiva em arquivos 
+com extensões de arquivo como .rar, .zip, etc, e vai tentar descomprimi-los 
+também. Se nada for selecionado, o RAR irá selecionar automaticamente todos 
+os arquivos com as extensões do arquivo na pasta atual.</p>
+
+<p>As opções disponíveis neste diálogo estão listadas abaixo.</p>
+
+<h4>Caminho de destino</h4>
+
+<p>Nome da pasta para colocar os arquivos extraídos. Se esta pasta não 
+existir, ela será criada automaticamente. Você pode aceitar o nome de pasta 
+proposto por padrão, ou digitar outro nome de pasta usando um teclado ou 
+pressionando o botão "Procurar" para procurar a pasta de destino. Além 
+disso, Além disso, você pode clicar em "Caminho de destino" para selecionar 
+rapidamente um dos caminhos propostos da lista. Detalhes sobre a lista de 
+caminhos propostos <a href="extract_proposed_paths.html"> são fornecidos 
+aqui</a>.</p>
+
+<h4>Perguntar antes de substituir</h4>
+
+<p>Perguntar antes de substituir um arquivo existente.</p>
+
+<h4>Substituir sem perguntar</h4>
+
+<p>Os arquivos existentes são substituídos sem qualquer aviso.</p>
+
+<h4>Ignorar arquivos existentes</h4>
+
+<p>Não substituir arquivos que já existem.</p>
+
+<h4>Manter arquivos corrompidos</h4>
+
+<p>Se ativado, o RAR não vai apagar os arquivos que não são extraídos 
+corretamente, por exemplo, quando o arquivo estiver danificado. Por padrão, 
+o RAR apaga esses arquivos. Você pode tentar salvar uma parte da informação 
+do arquivo corrompido.</p>
+
+<h4>Não extrair caminhos</h4>
+
+<p>Ignora as informações do caminho arquivado e extrai arquivos da pasta e 
+subpastas raiz do arquivo comprimido para a mesma pasta de destino.</p>
+
+<h4>Extrair arquivos para subpastas</h4>
+
+<p>Esta opção está disponível apenas quando vários arquivos comprimidos 
+são descomprimidos e desativada para um único arquivo. Ele coloca o conteúdo 
+descomprimido de cada arquivo em uma subpasta separada, cujo nome será 
+gerado com base no nome do arquivo.</p>
+
+<h4>Exibir arquivos extraídos</h4>
+
+<p>Exibe o conteúdo da pasta com os arquivos extraídos ao concluir a
+extração.</p>
+
+<h4>Salvar ajustes</h4>
+
+<p>Define o estado atual das opções nesta caixa de diálogo como o novo 
+padrão. Todas as opções, exceto o caminho de destino são salvos. "Extrair 
+arquivos para subpastas" é salvo apenas se você selecionou vários arquivos. 
+As opções salvas aqui também são usadas nas operações de extração no menu 
+de contexto e área de transferência.</p>
+
+</html>

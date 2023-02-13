@@ -1,0 +1,63 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Opciones de compresión de archivos: Avanzadas</h3>
+
+<h4>Compresión</h4>
+<p>Elija entre los métodos "Almacenar sin compresión", " La más rápida", 
+"Rápida", "Normal", "Buena" y " La mejor". "Almacenar" escribe los 
+archivos a comprimir a máxima velocidad y sin compresión. Para cada 
+método siguiente la relación de compresión se hace más alta y la 
+velocidad más baja, al pasar de " La más rápida" a "La mejor". Esta es 
+la única opción disponible para los archivos RAR y ZIP en la página de 
+diálogo, las demás opciones son sólo para los archivos RAR.</p>
+
+<h4>Dccionario</h4>
+<p>El tamaño del área de memoria para encontrar y comprimir patrones 
+repetidos en el procesamiento de datos. Un diccionario más grande puede 
+mejorar la relación de compresión para archivos grandes, especialmente 
+cuando se crea un archivo sólido. Pero un diccionario más grande también 
+disminuye la velocidad de compresión y aumenta los requisitos de memoria. 
+Los valores de tamaño de diccionario propuestos dependen de la cantidad 
+de memoria libre. Podrá seleccionar un diccionario más grande si hay más 
+memoria disponible. El tamaño máximo del diccionario RAR 4.x es de 4 MB.</p>
+
+<h4>Registro de recuperación</h4>
+<p>Agrega el registro de recuperación, que puede ayudar al comando 
+"Reparar" a restaurar un archivo en caso de daño. El tamaño del registro 
+de recuperación se especifica en porcentaje del tamaño del comprimido. Un 
+registro de recuperación más grande permite restaurar un área dañada más 
+grande, pero aumenta el tamaño del archivo y necesita más tiempo para 
+crearlo. Por lo general, entre el 3 y el 10% del tamaño del archivo es 
+una opción razonable.</p>
+
+<h4>Tamaño del volumen</h4>
+<p>Es posible crear un archivo comprimido que consista en varios archivos. 
+Dicho archivo se denomina multivolumen y los archivos individuales que lo 
+componen se conocen como volúmenes. Aquí se puede especificar un tamaño de 
+un solo volumen en un archivo multivolumen.</p>
+
+<h4>Pausar después de cada volumen</h4>
+<p>Pide confirmar antes de crear cada volumen. Es seguro cambiar el medio 
+con el volumen ya creado, cuando se muestre tal aviso. Esta opción se 
+ignora si no se especifica el tamaño del volumen.</p>
+
+<h4>Volúmenes de recuperación</h4>
+<p>Definir un número de volúmenes de recuperación para el archivo 
+multivolumen. Al extraer un archivo, cada volumen de recuperación 
+(extensión .rev) permite reconstruir un archivo de volumen habitual que 
+falta (extensión .rar). El número de volúmenes de recuperación debe ser 
+menor que el número de volúmenes RAR habituales y se reduce 
+automáticamente si es necesario. Esta opción se ignora si no se especifica 
+el tamaño del volumen. Es necesario colocar todos los volúmenes .rar y 
+.rev disponibles en la misma carpeta para permitir la reconstrucción de 
+los volúmenes .rar que faltan. También es posible reconstruir volúmenes 
+perdidos sin extracción, sólo hay que seleccionar uno de los archivos .rev 
+en la lista de archivos y activar el comando "Reparar" o tocar el nombre 
+del archivo .rev.</p>
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Opções de Compressão: Opções</h3>
+
+<h4>Testar arquivos comprimidos</h4>
+<p>Testa arquivos após a compressão. Esta opção é especialmente útil se "Apagar
+arquivos após a compressão "também estiver ativada. Neste caso, arquivos serão apagados
+apenas se o arquivo foi testado com sucesso.</p>
+
+<h4>Criar arquivos separados</h4>
+<p>Coloque todos os arquivos selecionados e pasta para um arquivo individual. 
+Nomes de arquivo são gerados como nome do item selecionado seguido pela 
+extensão apropriada do arquivo.</p>
+
+<h4>Usar soma de verificação de arquivo BLAKE2</h4>
+<p>A integridade dos dados em um arquivo comprimido RAR está protegido por somas de
+verificação calculadas e armazenadas para cada arquivo comprimido. Por padrão, o RAR
+utiliza comprimento de 32 bits na soma de verificação CRC32. Se esta opção estiver
+ativada, BLAKE2sp de 256 bits é usado em vez de CRC32. Enquanto CRC32 é confiável o
+suficiente para detectar a maioria dos erros, BLAKE2 tem ainda melhores propriedades
+de detecção de erros ao custo de um cálculo mais lento e tamanho de arquivo um pouco
+maior. Esta opção está disponível apenas para arquivos no formato RAR 5.0.</p>
+
+<h4>Mostrar tempo de compressão</h4>
+<p>Exibe o diálogo com o tempo total de compressão em conclusão bem sucedida da
+operação de compressão. Pode ser útil ao analisar diferentes modos de compressão.</p>
+
+<h4>Máscara do nome do arquivo</h4>
+<p>Anexa uma sequência de data atual para um nome do arquivo ao criar
+um arquivo. Útil para backups diários. A sequência de data é formatada por
+uma máscara especifica, que pode incluir os seguintes caracteres:
+</p>
+
+<table>
+
+<tr>
+<td><b>Y</b></td>
+<td>ano</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>mês</td>
+</tr>
+
+<tr>
+<td><b>MMM</b>&nbsp;</td>
+<td>mês como sequência de texto (Jan, Fev, etc.)</td>
+</tr>
+
+<tr>
+<td><b>W</b></td>
+<td>número da semana (uma semana começa com Segunda)</td>
+</tr>
+
+<tr>
+<td><b>A</b></td>
+<td>dia da semana (Segunda é 1, Domingo é 7)</td>
+</tr>
+
+<tr>
+<td><b>D</b></td>
+<td>dia do mês</td>
+</tr>
+
+<tr>
+<td><b>E</b></td>
+<td>dia do ano</td>
+</tr>
+
+<tr>
+<td><b>H</b></td>
+<td>horas</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>minutos (tratados como minutos se encontrados após a hora)</td>
+</tr>
+
+<tr>
+<td><b>I</b></td>
+<td>minutos (tratados como minutos, independente da posição das horas)</td>
+</tr>
+
+<tr>
+<td><b>S</b></td>
+<td>segundos</td>
+</tr>
+
+<tr>
+<td><b>N</b></td>
+<td>número do arquivo (valor numérico a partir de 1).
+<br>Ao comprimir, o RAR procura por arquivo já existente com
+nome gerado e, se for encontrado, incrementa o número do arquivo até a geração de
+um nome não utilizado. O caractere de formato 'N' não é suportado ao criar volumes.
+</td>
+</tr>
+</table>
+
+<p>Cada um dos formatos da sequência de caracteres listados acima representa apenas um
+caractere adicionado ao nome do arquivo. Por exemplo, use WW para dois dígitos
+no número da semana ou AAAA para definir o ano com quatro dígitos.</p>
+
+<p>Se o primeiro caractere na sequência do formato for '+', posições da
+sequência de data e nome do arquivo base serão trocados, então uma data vai
+preceder um nome do arquivo.</p>
+
+<p>O formato da sequência pode conter texto opcional entre os caracteres '{' e
+'}'. Este texto será inserido no nome do arquivo.</p>
+
+<p>Todos os outros caracteres do formato da sequência são adicionados ao nome
+do arquivo sem alterações.</p>
+
+</html>

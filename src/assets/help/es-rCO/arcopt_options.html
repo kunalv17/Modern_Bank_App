@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Opciones de compresión de archivos: Opciones</h3>
+
+<h4>Probar archivos comprimidos</h4>
+<p>Prueba los archivos después de comprimirlos. Esta opción es 
+especialmente útil si también está activada la opción "Eliminar archivos 
+después de comprimir". En este caso, los archivos se eliminarán sólo si la 
+compresión se ha probado con éxito.</p>
+
+<h4>Crear archivos comprimidos separados</h4>
+<p>Sitúa cada archivo y carpeta seleccionada en un archivo comprimido 
+individual. Los nombres de los comprimidos se generan como el nombre del 
+elemento seleccionado seguido de la extensión apropiada del archivo.</p>
+
+<h4>Utilizar la suma de verificación de archivo BLAKE2</h4>
+<p>La integridad de los datos de los archivos RAR está protegida por 
+sumas de control calculadas y almacenadas para cada archivo comprimido. 
+Por defecto, RAR utiliza una suma de comprobación CRC32 de 32 bits de 
+longitud. Si esta opción está activada, se utiliza 256 bit BLAKE2sp en 
+lugar de CRC32. Mientras que CRC32 es lo suficientemente confiable para 
+detectar la mayoría de los errores, BLAKE2 tiene propiedades de detección 
+de errores aún mejores a costa de un cálculo más lento y un tamaño de 
+comprimido ligeramente mayor. Esta opción sólo está disponible para 
+archivos en formato RAR 5.0.</p>
+
+<h4>Mostrar hora de compresión</h4>
+<p>Muestra el cuadro de diálogo que contiene el tiempo total de 
+compresión al finalizar con éxito la operación de archivo. Puede ser 
+útil para hacer una evaluación comparativa de los diferentes modos de 
+compresión.</p>
+
+<h4>Máscara de nombre de archivo</h4>
+<p>Agrega la cadena de fecha actual a un nombre de archivo al crear un 
+comprimido. Es útil para las copias de seguridad diarias. La cadena de 
+fecha tiene el formato de la máscara especificada, que puede incluir los 
+siguientes caracteres:
+</p>
+
+<table>
+
+<tr>
+<td><b>Y</b></td>
+<td>año</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>mes</td>
+</tr>
+
+<tr>
+<td><b>MMM</b>&nbsp;</td>
+<td>mes como cadena de texto (Ene, Feb, etc.)</td>
+</tr>
+
+<tr>
+<td><b>W</b></td>
+<td>un número de semana (una semana comienza con el lunes)</td>
+</tr>
+
+<tr>
+<td><b>A</b></td>
+<td>día de la semana (lunes es 1, domingo es 7)</td>
+</tr>
+
+<tr>
+<td><b>D</b></td>
+<td>día del mes</td>
+</tr>
+
+<tr>
+<td><b>E</b></td>
+<td>día del año</td>
+</tr>
+
+<tr>
+<td><b>H</b></td>
+<td>horas</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>minutos (tratados como minutos si se encuentran después de horas)</td>
+</tr>
+
+<tr>
+<td><b>I</b></td>
+<td>minutos (tratados como minutos independientemente de la posición de las horas)</td>
+</tr>
+
+<tr>
+<td><b>S</b></td>
+<td>segundos</td>
+</tr>
+
+<tr>
+<td><b>N</b></td>
+<td>número de archivo (valor numérico a partir de 1).
+<br>Al comprimir, RAR busca el archivo ya existente con el nombre 
+generado y, si lo encuentra, incrementa el número de archivo hasta 
+generar un nombre no utilizado. El carácter de formato 'N' no se 
+admite cuando se crean volúmenes.</td>
+</tr>
+</table>
+
+<p>Cada uno de los caracteres de la cadena de formato enumerados 
+anteriormente representa sólo un carácter añadido al nombre del 
+archivo comprimido. Por ejemplo, use WW para el número de la semana 
+de dos dígitos o YYYY para definir el año de cuatro dígitos.</p>
+
+<p>Si el primer carácter de la cadena de formato es '+', se 
+intercambian las posiciones de la cadena de fecha y el nombre de 
+archivo base, por lo que una fecha precederá al nombre de archivo 
+comprimido.</p>
+
+<p>El formato de la cadena puede contener un texto opcional encerrado 
+en "{" y "}". Este texto se inserta en el nombre del archivo.</p>
+
+<p>Todos los demás caracteres de la cadena de formato se añaden al 
+nombre del archivo comprimido sin cambios.</p>
+
+</html>

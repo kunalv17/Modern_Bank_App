@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Extraction options</h3>
+
+<p>If extraction command is invoked inside of archive, while browsing
+archive contents, it will unpack files and folders selected in this
+archive. If nothing is selected, RAR will automatically select
+the entire archive contents.</p>
+
+<p>If extraction is invoked outside of archive, while browsing usual
+non-archived files, selected files are considered as archives
+and processed with unpacking. If folders are selected, RAR will search
+them recursively for files with archive extensions such as
+.rar, .zip, etc. and attempt to unpack them too. If nothing is selected,
+RAR will automatically select all files with archive extensions
+in the current folder.</p>
+
+<p>Options available in this dialog are listed below.</p>
+
+<h4>Destination path</h4>
+
+<p>Name of folder to place extracted files. If this folder does not exist,
+it will be created automatically. You can accept the proposed by default
+folder name, enter another folder name using a keyboard or press "Browse"
+button to browse for destination folder. You can also click on
+"Destination path" button to quickly select one of proposed paths from
+the list. Details on proposed paths list <a href="extract_proposed_paths.html">
+are provided here</a>.</p>
+
+<h4>Ask before overwrite</h4>
+
+<p>Prompts before overwriting an existing file.</p>
+
+<h4>Overwrite without prompt</h4>
+
+<p>Existing files are overwritten without any prompt.</p>
+
+<h4>Skip existing files</h4>
+
+<p>Do not overwrite files which are already exist.</p>
+
+<h4>Keep broken files</h4>
+
+<p>If enabled, RAR will not delete files which are not extracted properly,
+for example, when archive is damaged. By default, RAR deletes such files.
+You can try to save a part of the information from broken file.</p>
+
+<h4>Do not extract paths</h4>
+
+<p>Ignore archived path information and extract files from root archive
+folder and subfolders to the same destination folder.</p>
+
+<h4>Extract archives to subfolders</h4>
+
+<p>This option is available only when multiple archives are unpacked
+and disabled for single archive. It places unpacked contents of each archive
+to separate subfolder, which name will be generated based on the archive
+name.</p>
+
+<h4>Display extracted files</h4>
+
+<p>Display contents of folder with extracted files on successful
+completion.</p>
+
+<h4>Save settings</h4>
+
+<p>Set current state of options in this dialog as the new default.
+All options except the destination path are saved. "Extract archives to
+subfolders" is saved only if you selected multiple archives.
+Options saved here are also used in context menu and clipboard extraction
+operations.</p>
+
+</html>

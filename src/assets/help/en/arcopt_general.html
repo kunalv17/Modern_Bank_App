@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Archiving options: General</h3>
+
+<h4>Archive name</h4>
+<p>Specify the name of archive to create or update.
+You can enter the name manually or press "Browse" button to locate
+an existing archive or folder. If archive name extension is not specified,
+it will be appended automatically. If path to archive is missing,
+the current folder is assumed. "Archive name" label is clickable and switches
+between current folder and device storage root folder. In Android 4.4 or newer
+"Archive name" also displays external card and USB drive paths if they are
+available.</p>
+
+<h4>RAR, ZIP or RAR 4.x</h4>
+<p>Select the archive format. RAR option means RAR 5.0 archive format,
+which usually provides better compression ratio, data recovery
+and encryption options, while ZIP is more widespread and can be unpacked
+by a larger number of different software programs. Select RAR 4.x to create
+an archive in RAR 4.x format, compatible with WinRAR 4.x versions.
+RAR 5.0 format has more efficient recovery record, stronger encryption
+and typically higher compression than RAR 4.x. So use RAR 4.x,
+only if archive must be unpacked by software lacking RAR 5.0
+decompression support.</p>
+
+<h4>Set password</h4>
+<p>Encrypt archiving files with a password. For maximum security
+it is recommended to use RAR format, which utilizes a stronger encryption
+algorithm, to avoid passwords shorter than 8 characters, to avoid common
+words as passwords.</p>
+
+<h4>Delete files after archiving</h4>
+<p>If archiving has completed successfully, original files will be
+deleted.</p>
+
+<h4>Create solid archive</h4>
+<p>This option is available only for RAR format and only for new archives.
+It is ignored when updating an existing archive. If it is enabled, all files
+in archive are handled as one continuous data stream. It helps to improve
+the compression ratio, especially for many small similar files.
+While creating a new solid archive requires about the same time as 
+usual non-solid archive, updating files and extracting individual files
+in solid archives is much slower than in non-solid. It is not recommended to
+use solid mode if you plan to update an archive in the future. Also solid
+archives are more sensitive to data damage. Unlike usual archives, all files
+after damaged one most probably will also be damaged.</p>
+
+<h4>Profiles</h4>
+<p>This button allows to save current settings from all archiving dialog
+pages to profile, to select settings previously stored in profiles
+and to organize profiles. You can mark one of profiles as default
+in "Organize profiles", so it will be selected automatically when opening
+the dialog. Default profile is denoted by a solid circle before its name,
+other profiles have an empty circle preceding the profile name
+in list of saved profiles. "Save current settings as default" command
+saves settings to profile with "Default profile" name and marks it
+as the default in single step. Some settings, such as archive name,
+password and selected files, are not stored in the profile.
+Part of default profile options is also used in context menu
+and clipboard archiving operations.</p>
+
+</html>

@@ -1,0 +1,56 @@
+﻿<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Možnosti arhiviranja: Napredno</h3>
+
+<h4>Stiskanje</h4>
+<p>Izberite med metodami "Shrani brez stiskanja", "Najhitreje", "Hitro", 
+"Običajno", "Dobro" in "Najboljše". "Shrani" zapisuje datoteke v arhiv pri 
+največji hitrosti in brez stiskanja. Pri vsaki naslednji metodi stopnja 
+stiskanja postane višja in nižja hitrost, ko preidete iz 'Najhitrejšega' na
+'Najboljše'. To je edina možnost, ki je na voljo v pogovornem oknu za arhive 
+RAR in ZIP. Druge možnosti so samo za arhive RAR.</p>
+
+<h4>Slovar</h4>
+<p>Velikost pomnilniškega področja za iskanje in stiskanje ponavljajočih se 
+vzorcev pri obdelavi podatkov. Večji slovar lahko izboljša razmerje stiskanja
+velikih datotek, zlasti pri ustvarjanju trdnega arhiva.
+Toda večji slovar prav tako zmanjšuje hitrost stiskanja in povečuje potrebe po
+pomnilniku. Predlagane vrednosti velikosti slovarja so odvisne od količine 
+prostega pomnilnika. Če bo na voljo več pomnilnika, boste lahko izbrali večji
+slovar. Največja velikost slovarja RAR 4.x je 4 MB.</p>
+
+<h4>Obnovitveni zapis</h4>
+<p>Dodajte obnovitveni zapis, ki lahko pomaga obnoviti arhiv v primeru škode
+z ukazom 'Popravi'. Velikost obnovitvenega zapisa je določena v odstotkih 
+velikosti arhiva. Večji obnovitveni zapis omogoča obnovitev večjega poškodovanega
+območja, vendar poveča velikost arhiva in potrebuje več časa za ustvarjanje. 
+Običajno je 3-10% velikosti arhiva nsajbolj smiselna izbira.</p>
+
+<h4>Velikost nosilca</h4>
+<p>Možno je ustvariti arhiv, sestavljen iz več datotek. Tak arhiv se imenuje
+'Arhiv z več nosilcev' in posamezne datoteke, ki sestavljajo ta arhiv, so znane
+kot nosilci. Tu lahko določite velikost posameznega nosilca v 'Arhivu z več 
+nosilci'.</p>
+
+<h4>Pavza po vsakem nosilcu</h4>
+<p>Po ustvarjanju vsakega nosilca zahteva potrditev. Med prikazom takšnega 
+poziva je varno zamenjati medij z že ustvarjenim nosilcem. Ta možnost se 
+prezre, če ni določena velikost nosilca.</p>
+
+<h4>Obnovitveni nosilci</h4>
+<p>Določite več obnovitvenih količin za 'Arhiv z več nosilci'.
+Ko razširjate, lahko vsak obnovitveni nosilec (končnica .rev) rekonstruira eno
+manjkajočo datoteko z nosilcem (končnica .rar). Število obnovitvenih nosilcev
+mora biti manjše od števila običajnih RAR nosilcev in se po potrebi samodejno
+zmanjša. Ta možnost ni upoštevana, če ni določena velikost nosilca. V isto mapo
+morate postaviti vse razpoložljive nosilce .rar in .rev, da omogočite 
+rekonstrukcijo manjkajočih nosilcev .rar. Možno je tudi rekonstruirati manjkajoče
+nosilce brez razširjanja. Samo izberite eno .rev datoteko na seznamu datotek in
+aktivirajte ukaz 'Popravi' ali tapnite na ime datoteke .rev.</p>
+
+</html>

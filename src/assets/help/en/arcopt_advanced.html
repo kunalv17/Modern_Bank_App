@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Archiving options: Advanced</h3>
+
+<h4>Compression</h4>
+<p>Choose between "Store without compression", "Fastest", "Fast", "Normal",
+"Good" and "Best" methods. "Store" writes files to archive at maximum speed
+and without compression. For every following method compression ratio becomes
+higher and speed lower, when going from "Fastest" to "Best". This is the only
+option available for RAR and ZIP archives on the dialog page, other options
+are for RAR archives only.</p>
+
+<h4>Dictionary</h4>
+<p>Size of memory area to find and compress repeated patterns
+in processing data. Larger dictionary may improve the compression ratio
+for big files, especially when creating a solid archive.
+But larger dictionary also decreases the compression speed
+and increases memory requirements. Proposed dictionary size values
+depend on free memory amount. You will be able to select larger
+dictionary if more memory is available. RAR 4.x maximum dictionary size
+is 4 MB.</p>
+
+<h4>Recovery record</h4>
+<p>Add the recovery record, which may help "Repair" command to restore
+an archive in case of damage. Recovery record size is specified
+in percent of archive size. Larger recovery record allows to restore
+a larger damaged area, but increases the archive size and needs more time
+to create. Usually 3 - 10% of archive size is a reasonable choice.</p>
+
+<h4>Volume size</h4>
+<p>It is possible to create an archive consisting of several files.
+Such archive is called multivolume and individual files composing this
+archive are known as volumes. Here you can specify a size of single volume
+in multivolume archive.</p>
+
+<h4>Pause after each volume</h4>
+<p>Ask for confirmation before creating every volume. It is safe to change
+media with already created volume, when such prompt is displayed.
+This option is ignored if volume size is not specified.</p>
+
+<h4>Recovery volumes</h4>
+<p>Define a number of recovery volumes for multivolume archive.
+When extracting an archive, each recovery volume (.rev extension) allows
+to reconstruct one missing usual volume file (.rar extension).
+Number of recovery volumes must be less than number of usual RAR volumes
+and it is reduced automatically if necessary. This option is ignored
+if volume size is not specified. You need to place all available
+.rar and .rev volumes to same folder to allow reconstruction of missing
+.rar volumes. It is also possible to reconstruct missing volumes
+without extraction, just select one of .rev files in the file list
+and activate "Repair" command or tap on .rev file name.</p>
+
+</html>

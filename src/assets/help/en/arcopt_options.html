@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Archiving options: Options</h3>
+
+<h4>Test archived files</h4>
+<p>Test files after archiving. This option is especially useful if "Delete
+files after archiving" is also enabled. In this case files will be deleted
+only if the archive had been successfully tested.</p>
+
+<h4>Create separate archives</h4>
+<p>Place every selected file and folder to individual archive.
+Archive names are generated as selected item name followed by
+appropriate archive extension.</p>
+
+<h4>Use BLAKE2 file checksum</h4>
+<p>File data integrity in RAR archive is protected by checksums calculated
+and stored for every archived file. By default, RAR uses 32 bit length
+CRC32 checksum. If this option is on, 256 bit BLAKE2sp is used instead of
+CRC32. While CRC32 is reliable enough to detect most of errors, BLAKE2
+has even better error detection properties at cost of slower calculation
+and slightly larger archive size. This option is available only
+for archives in RAR 5.0 format.</p>
+
+<h4>Show archiving time</h4>
+<p>Display the dialog containing the total archiving time on
+successful completion of archiving operation. Might be useful when
+benchmarking different archiving modes.</p>
+
+<h4>Archive name mask</h4>
+<p>Append the current date string to an archive name when creating
+an archive. Useful for daily backups. The date string is formatted by
+the specified mask, which may include following characters:
+</p>
+
+<table>
+
+<tr>
+<td><b>Y</b></td>
+<td>year</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>month</td>
+</tr>
+
+<tr>
+<td><b>MMM</b>&nbsp;</td>
+<td>month as text string (Jan, Feb, etc.)</td>
+</tr>
+
+<tr>
+<td><b>W</b></td>
+<td>a week number (a week starts with Monday)</td>
+</tr>
+
+<tr>
+<td><b>A</b></td>
+<td>day of week (Monday is 1, Sunday is 7)</td>
+</tr>
+
+<tr>
+<td><b>D</b></td>
+<td>day of month</td>
+</tr>
+
+<tr>
+<td><b>E</b></td>
+<td>day of year</td>
+</tr>
+
+<tr>
+<td><b>H</b></td>
+<td>hours</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>minutes (treated as minutes if encountered after hours)</td>
+</tr>
+
+<tr>
+<td><b>I</b></td>
+<td>minutes (treated as minutes regardless of hours position)</td>
+</tr>
+
+<tr>
+<td><b>S</b></td>
+<td>seconds</td>
+</tr>
+
+<tr>
+<td><b>N</b></td>
+<td>archive number (numeric value starting from 1).
+<br>When archiving, RAR searches for already existing archive with
+generated name and if found, increments the archive number until generating
+an unused name. 'N' format character is not supported when creating volumes.
+</td>
+</tr>
+</table>
+
+<p>Each of format string characters listed above represents only one
+character added to archive name. For example, use WW for two digit
+week number or YYYY to define the four digit year.</p>
+
+<p>If the first character in the format string is '+', positions of
+the date string and base archive name are exchanged, so a date will
+precede an archive name.</p>
+
+<p>The format string may contain optional text enclosed in '{' and
+'}' characters. This text is inserted into archive name.</p>
+
+<p>All other characters of format string are added to archive name
+without changes.</p>
+
+</html>

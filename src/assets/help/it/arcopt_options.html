@@ -1,0 +1,94 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Opzioni d'archiviazione: Opzioni</h3>
+
+<h4>Verifica file archiviati</h4>
+<p>Verifica l'integrità dei file una volta archiviati. Questa opzione è particolarmente utile se viene abilitata anche l'opzione &quot;Elimina i file dopo l'archiviazione&quot;: in questo caso i file verranno eliminati solo se la copia archiviata avrà passato il test con successo.</p>
+<h4>Crea archivi separati</h4>
+<p>Crea un archivio per ogni singolo file e cartella da archiviare. Il nome dell'archivio normalmente è il nome del singolo file/cartella seguita dall'appropriata estensione dell'archivio.</p>
+<h4>Utilizza le firme d'integrità BLAKE2</h4>
+<p>L'integrità dei file per gli archivi RAR viene assicurata da una particolare &quot;firma&quot; calcolata per ogni file e memorizzata nell'archivio. Per definizione RAR usa l'algoritmo CRC32 a 32 bit. Se questa opzione viene abilitata viene utilizzato l'algoritmo BLAKE2 a 256 bit.<br>
+  Mentre l'algoritmo CRC32 è abbastanza affidabile per individuare la maggior parte degli errori, BLAKE2 ha una individuazione migliore degli errori anche se per contro comporta un calcolo più lungo e una dimensione dell'archivio leggermente superiore.<br>
+  Questa opzione è disponibile solo per archivi in formato RAR 5.0.
+</p>
+
+<h4>Visualizza il tempo impiegato per l'archiviazione</h4>
+<p>Al termine dell'archiviazione visualizza, nel caso di conclusone avvenuta con successo, il tempo impiegato per l'archiviazione. Può essere utile per valutare i diversi metodi di archiviazione.</p>
+
+<h4>Maschera nome archivio</h4>
+<p>Appende al nome dell'archivio parte della data o dell'orario corrente. Utile per le copie di sicurezza giornaliere. La parte della data/orario viene definita con un'apposita maschera la quale può includere i seguenti caratteri:</p>
+<table>
+  
+  <tr>
+<td><b>Y</b></td>
+<td>anno</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>mese in forma numerica</td>
+</tr>
+
+<tr>
+<td><b>MMM</b>&nbsp;</td>
+<td>mese come testo abbreviato (Gen, Feb, ecc.)</td>
+</tr>
+
+<tr>
+<td><b>W</b></td>
+<td>numero della settimana (la settimana inizia da lunedì)</td>
+</tr>
+
+<tr>
+<td><b>A</b></td>
+<td>giorno della settimana (lunedì è1, domenica è 7)</td>
+</tr>
+
+<tr>
+<td><b>D</b></td>
+<td>giorno del mese</td>
+</tr>
+
+<tr>
+<td><b>E</b></td>
+<td>giorno dell'anno</td>
+</tr>
+
+<tr>
+<td><b>H</b></td>
+<td>ore</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>minuti, se inserito dopo il carattere dell'ora</td>
+</tr>
+
+<tr>
+<td><b>I</b></td>
+<td>minuti, indipendentemente dalla posizione dell'ora</td>
+</tr>
+
+<tr>
+<td><b>S</b></td>
+<td>secondi</td>
+</tr>
+
+<tr>
+<td><b>N</b></td>
+<td>Numero archivio, con inizio da 1.<br>
+  Quando RAR inizia l'archiviazione, verifica che non esista un archivio con lo stesso nome. Se lo trova incrementa questo progressivo sino a generare un nome non utilizzato.<br>
+  Il carattere &quot;N&quot; non è supportato quando si generano archivi multi-volume.</td>
+</tr>
+</table>
+
+<p>Ogni singolo carattere utilizzato per definire la maschera equivale ad un solo carattere aggiunto al nome dell'archivio. Ad esempio, indicando WW viene inserito il numero della settimana a due cifre, mentre YYYY definisce il numero dell'anno a 4 cifre.<br>
+  Se il primo carattere delle maschera è &quot;+&quot; la data/orario viene anteposta al nome dell'archivio.<br>
+  La maschera può contenere del testo opzionale incluso tra i caratteri &quot;{&quot; e &quot;}&quot;. Questo testo viene inserito nel nome dell'archivio.</p>
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Soporte de tarjeta SD externa</h3>
+
+<p>Este tema está relacionado sólo con las tarjetas SD externas extraíbles 
+de los dispositivos Android 4.4. Otras versiones de Android no restringen 
+la escritura en la tarjeta externa. La tarjeta interna es totalmente 
+escribible independientemente de la versión de Android.</p>
+
+<p>En Android 4.4 sólo las aplicaciones preinstaladas por el fabricante de 
+hardware pueden escribir en carpetas arbitrarias de la tarjeta SD externa. 
+Otras aplicaciones, incluidas las RAR, sólo pueden escribir en una carpeta 
+específica de la tarjeta externa y están limitadas al acceso de sólo 
+lectura para otras carpetas de la tarjeta externa. Para RAR dicha carpeta 
+de tarjeta externa de escritura es "Android/data/com.rarlab.rar". RAR 
+propone la subcarpeta "files" de esta carpeta para almacenar archivos 
+comprimidos y archivos, y utiliza el nombre "Tarjeta SD externa inicio" 
+para esta carpeta. Supongamos que una tarjeta SD externa está disponible 
+en /storage/extSdCard (varía en los distintos dispositivos), el nombre 
+completo de dicha tarjeta SD externa será 
+/storage/extSdCard/Android/data/com.rarlab.rar/files.</p>
+
+<p>En el caso de los dispositivos con tarjeta SD externa y Android 4.4, 
+los enlaces a la carpeta raíz de la tarjeta SD externa (sólo lectura) y 
+al inicio de la tarjeta SD externa (escritura) se añaden a "Favoritos" en 
+el <a href="navigation_panel.html">panel de navegación</a>
+después de una nueva instalación RAR. También puedes forzar a RAR a crear 
+estos enlaces eliminando todos los elementos favoritos del panel de 
+navegación.</p>
+
+<p>Tenga en cuenta que al desinstalar RAR o borrar los datos RAR en el 
+administrador de aplicaciones de Android, el contenido de la carpeta de 
+inicio de la tarjeta SD externa y sus subcarpetas se elimina por completo. 
+Copie todos los archivos importantes de esta carpeta a otra ubicación 
+antes de realizar dichas acciones.</p>
+
+</html>

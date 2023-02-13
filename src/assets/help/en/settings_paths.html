@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Paths</h3>
+
+<h4>Default extraction folder</h4>
+<p>Specify a folder which will be proposed by default as destination
+for extracted files in extraction dialog and <a href="context_menu.html">
+context menu</a>.</p>
+
+<h4>Use default folder</h4>
+<p>Defines when to use the default extraction folder. Possible choices
+are "Never", "Inside of temporary folder only" and "Always". Entire contents
+of Android/data/com.rarlab.rar temporary folder is removed when uninstalling
+RAR application and it might lead to data loss if it contains previously
+unpacked files. So by default this option is set to "Inside of temporary
+folder only" and, if archive is stored in the temporary folder, which may
+happen if it was received from another application, RAR automatically
+proposes to unpack such archive to default extraction folder outside of
+temporary folder.</p>
+
+<h4>Append archive name</h4>
+<p>It controls if archive name without extension is appended to destination
+path initially proposed in extraction dialog. It does not affect extraction
+to folder command in context menu.</p>
+
+<h4>Extraction history</h4>
+<p>If enabled, destination paths in extraction dialog are added to history
+and can be selected later with "Destination path" button in this dialog.
+Paths selected directly from context menu are not added to history
+regardless of this option.</p>
+
+<h4>Start-up folder</h4>
+<p>Select a folder to display after RAR is started. By default it is
+the device storage root folder.</p>
+
+</html>

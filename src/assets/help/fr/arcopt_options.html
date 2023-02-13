@@ -1,0 +1,96 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Options d&apos;archivage: Options</h3>
+
+<h4>Fichiers de test des archives</h4>
+<p>Testez les fichiers apr&egrave;s l&apos;archivage. Cette option est particuli&egrave;rement utile si &quot;Supprimer les fichiers apr&egrave;s l&apos;archivage&quot; est &eacute;galement activ&eacute;. Dans ce cas, les fichiers ne seront supprim&eacute;s que si l&apos;archive a &eacute;t&eacute; test&eacute;e avec succ&egrave;s.</p>
+
+<h4>Cr&eacute;er des archives s&eacute;par&eacute;es</h4>
+<p>Placez chaque fichier et dossier s&eacute;lectionn&eacute;s dans des archives individuelles. Des noms de fichiers sont g&eacute;n&eacute;r&eacute;s comme nom de l&apos;&eacute;l&eacute;ment s&eacute;lectionn&eacute; suivie par l&apos;extension d&apos;archive appropri&eacute;e.</p>
+
+<h4>Utiliser la de somme de contr&ocirc;le de fichier BLAKE2</h4>
+<p>L&apos;int&eacute;grit&eacute; des donn&eacute;es du fichier dans l&apos;archive RAR est prot&eacute;g&eacute;e par des sommes de contr&ocirc;le calcul&eacute;es et enregistr&eacute;es pour chaque fichier archiv&eacute;. Par d&eacute;faut, RAR utilise la somme de contr&ocirc;le CRC32 de longueur 32 bits. Si cette option est activ&eacute;e, BLAKE2sp de 256 bits est utilis&eacute; au lieu de CRC32. Alors que CRC32 est suffisamment fiable pour d&eacute;tecter la plupart des erreurs, BLAKE2 a cependant de meilleures propri&eacute;t&eacute;s de d&eacute;tection d&apos;erreurs avec un temps de calcul plus lent et une taille d&apos;archives l&eacute;g&egrave;rement plus grande. Cette option est disponible uniquement pour les archives RAR de format 5.0.</p>
+
+<h4>Afficher le temps d&apos;archivage</h4>
+<p>Affichez une bo&icirc;te de dialogue contenant le temps d&apos;archivage total apr&egrave;s la r&eacute;ussite de l&apos;op&eacute;ration d&apos;archivage. Cela peut s&apos;av&eacute;rer utile pour comparer diff&eacute;rents modes d&apos;archivage.</p>
+
+<h4>Noms d&apos;archive diff&eacute;renci&eacute;s</h4>
+<p>Ajoutez la r&eacute;f&eacute;rence &agrave; la date actuelle &agrave; un nom d&apos;archive lors de sa cr&eacute;ation. Utile pour les sauvegardes quotidiennes. Le format de la date est d&eacute;fini par le masque sp&eacute;cifi&eacute;, qui peut inclure les caract&egrave;res suivants:</p>
+
+<table>
+
+<tr>
+<td><b>Y</b></td>
+<td>ann&eacute;e</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>mois</td>
+</tr>
+
+<tr>
+<td><b>MMM</b>&nbsp;</td>
+<td>mois au format texte (Jan, F&eacute;v, etc.)</td>
+</tr>
+
+<tr>
+<td><b>W</b></td>
+<td>num&eacute;ro de la semaine (la semaine commence lundi)</td>
+</tr>
+
+<tr>
+<td><b>A</b></td>
+<td>jour dans la semaine (le lundi est 1, le Dimanche 7)</td>
+</tr>
+
+<tr>
+<td><b>D</b></td>
+<td>journ&eacute;e dans le mois</td>
+</tr>
+
+<tr>
+<td><b>E</b></td>
+<td>journ&eacute;e dans l&apos;ann&eacute;e</td>
+</tr>
+
+<tr>
+<td><b>H</b></td>
+<td>heures</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>Minutes (les minutes sont trait&eacute;es si le param&egrave;tre &quot;Heures&quot; est sp&eacute;cifi&eacute;)</td>
+</tr>
+
+<tr>
+<td><b>I</b></td>
+<td>minutes (prises en compte comme des minutes ind&eacute;pendamment de la position des heures)</td>
+</tr>
+
+<tr>
+<td><b>S</b></td>
+<td>secondes</td>
+</tr>
+
+<tr>
+<td><b>N</b></td>
+<td>num&eacute;ro d&apos;archive (valeur num&eacute;rique &agrave; partir de 1). <br>Lors de l&apos;archivage, RAR cherche les archives d&eacute;j&agrave; cr&eacute;&eacute;es avec un nom g&eacute;n&eacute;r&eacute; et s&apos;il en trouve, incr&eacute;mente le num&eacute;ro d&apos;archive jusqu&apos;&agrave; g&eacute;n&eacute;rer un nom inutilis&eacute;. Le caract&egrave;re de format &apos;N&apos; n&apos;est pas pris en charge lors de la cr&eacute;ation des volumes.</td>
+</tr>
+</table>
+
+<p>Chacun des formats &eacute;num&eacute;r&eacute;s ci-dessus ne repr&eacute;sente qu&apos;un caract&egrave;re ajout&eacute; au nom de l&apos;archive. Par exemple, utilisez WW pour les num&eacute;ros de semaine &agrave; deux chiffres ou AAAA pour d&eacute;finir l&apos;ann&eacute;e avec quatre chiffres.</p>
+
+<p>Si le premier caract&egrave;re dans le format est &apos;+&apos;, les positions de la date et du nom de l&apos;archive de base sont &eacute;chang&eacute;es, de sorte que la date sera avant le nom de l&apos;archive.</p>
+
+<p>Le format peut contenir du texte facultatif entour&eacute; entre les caract&egrave;res &apos;{&apos; et &apos;}&apos;. Ce texte est ins&eacute;r&eacute; dans le nom de l&apos;archive.</p>
+
+<p>Tous les autres caract&egrave;res de format sont ajout&eacute;s au nom de l&apos;archive sans modification.</p>
+
+</html>

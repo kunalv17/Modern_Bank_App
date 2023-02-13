@@ -1,0 +1,37 @@
+﻿<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Podpora zunanje SD kartice</h3>
+
+<p>Ta tema je povezana samo z odstranljivimi zunanjimi SD karticami v napravah
+Android 4.4. Druge različice Androida ne omejujejo pisanja na zunanjo kartico.
+Notranja kartica je popolnoma zapisljiva, ne glede na različico Androida.</p>
+
+<p>V Android 4.4 samo aplikacije, ki jih je prednamestil proizvajalec strojne 
+opreme, lahko pišejo v poljubne mape zunanje kartice SD.
+Drugim aplikacijam, vključno z RAR, je dovoljeno pisanje samo v posamezno mapo,
+specifično zanjo na zunanji kartici, omejen pa je 'samo-za-branje' drugih 
+zunanjih map. Za RAR je taka zapisljiva zunanja kartica
+"Android/data/com.rarlab.rar". RAR predlaga podmapo 'Files' te mape za
+shranjevanje arhivov in datotek, ter za to mapo uporablja ime 
+'Zunanja domača kartica SD'. Če predpostavimo, da je zunanja kartica SD na 
+voljo na  /storage/extSdCard (razlikuje se na različnih naprav), bo polno ime
+domače zunanje kartice SD /storage/extSdCard/Android/data/com.rarlab.rar/files.</p>
+
+<p>Pri napravah z zunanjo SD kartico in Androidom 4.4 so povezave do zunanje
+korenske mape SD kartice (samo-za-branje) in zunanje domače kartice SD kartice
+(zapisljive) dodane med 'Priljubljene' v
+<a href="navigation_panel.html">Podokno za krmarjenje</a>
+po sveži namestitvi RAR. Prav tako lahko prisilite RAR, da ustvari te povezave
+tako, da izbrišete vse priljubljene vnose v Podoknu za krmarjenje.</p>
+
+<p>Upoštevajte, da kadar odstranite RAR ali počistite RAR podatke v Androidovem
+Upravitelju aplikacij, se popolnoma odstrani vsebina zunanje domače mape SD 
+kartice in njenih podmap. Pred takimi postopki kopirajte vse pomembne datoteke
+iz te mape na drugo mesto.</p>
+
+</html>

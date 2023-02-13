@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Opzioni d'archiviazione: Avanzate</h3>
+
+<h4>Compressione</h4>
+<p>Scegliete il livello di compressione tra &quot;Memorizza senza compressione&quot;, &quot;Compressione più veloce&quot;, &quot;Compressione veloce&quot;, &quot;Compressione normale&quot;, &quot;Buona compressione&quot; e &quot;Compressione migliore&quot;.<br>
+&quot;Memorizza senza compressione&quot; archivia i file alla massima velocità senza comprimerli. Per i seguenti metodi il fattore di compressione aumenta e la velocità diminuisce, passando da &quot;Compressione più veloce&quot; a &quot;Compressione migliore&quot;.<br>
+Questa è l'unica opzione disponibile per i formati RAR e ZIP nel presente pannello: tutte le altre opzioni sono solo per il formato RAR.</p>
+<h4>MB di Dizionario</h4>
+<p>Dimensione dell'area di memoria utilizzata per individuare le &quot;strutture&quot; ripetitive durante la fase di compressione. Un dizionario grande migliora il fattore di compressione sui file grandi, specialmente quando si creano archivi solidi. Ma un dizionario grande diminuisce la velocità di compressione ed incrementa i requisiti di memoria.<br>
+  La dimensione del dizionario proposta dipende alla quantità di memoria disponibile. Potete selezionare un valore maggiore della memoria destinata al dizionario se è disponibile più memoria.
+    <br>
+La dimensione massima del dizionario per il formato RAR 4.x è di 4 MB.</p>
+<h4>Informazioni per il recupero</h4>
+<p>Aggiunge delle informazioni per il recupero che possono essere utili al comando &quot;Ripara&quot; per ricostruire un archivio eventualmente danneggiato.<br>
+La dimensione delle informazioni per il recupero è espressa in percentuale rispetto alla dimensione dell'archivio.<br>
+Una quantità maggiore delle informazioni per il recupero permette di riparare un'area danneggiata maggiore, ma incrementa la dimensione dell'archivio e richiede più tempo per crearlo. Solitamente una scelta ragionevole va dal 3 al 10% .</p>
+<h4>Dimensione volume</h4>
+<p>&Egrave; possibile creare un archivio suddiviso in più file, ad esempio se la dimensione dell'archivio finale supera quella di una singola scheda SD su cui memorizzarlo. Questo tipo di archivio viene chiamato multi-volume ed ogni singolo file che lo compone viene chiamato &quot;volume&quot;.<br>
+  Qui potete specificare la dimensione di ogni singolo volume che andrà a comporre l'archivio multi-volume finale.
+</p>
+<h4>Pausa dopo ogni volume</h4>
+<p>Viene chiesta una conferma prima di creare il volume seguente. Questo permette di cambiare il dispositivo dove è stato caricato l'ultimo volume quanto verrà richiesto. Questa opzione è ignorata se non viene specificata la dimensione del volume.</p>
+<h4>Volumi di ripristino</h4>
+<p>Viene chiesto il numero di volumi di ripristino per un archivio multi-volume.<br>
+  Quando scompattate un archivio multi-volume, ogni volume di ripristino (con estensione .REV) permette di ricostruire un qualsiasi volume mancante o danneggiato (file con estensione .RAR).<br>
+  Il numero dei volumi di ripristino deve essere inferiore a quello del numero dei volumi che compongono l'archivio multi-volume e verrà ridotto in automatico se necessario.<br>
+Questa opzione è ignorata se non viene specificata la dimensione del volume.<br>
+Per ricostruire un volume danneggiato dovete porre tutti i volumi normali e di ripristino nella stessa cartella. &Egrave; inoltre possibile ricostruire un volume danneggiato o mancante senza estrarre i file, basta selezionare uno dei volumi .REV dall'elenco dei file e attivare il comando &quot;Ripara&quot; o &quot;selezionare&quot; un file con estensione .REV.</p>
+
+</html>

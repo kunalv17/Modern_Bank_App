@@ -1,0 +1,37 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>External SD card support</h3>
+
+<p>This topic is related only to removable external SD cards in Android 4.4
+devices. Other Android versions do not restrict write to external card.
+Internal card is fully writable regardless of Android version.</p>
+
+<p>In Android 4.4 only applications pre-installed by hardware
+manufacturer can write to arbitrary folders of external SD card.
+Other applications including RAR are allowed to write only to single
+application specific folder on external card and limited to read only
+access for other external card folders. For RAR such writable external card
+folder is "Android/data/com.rarlab.rar". RAR proposes "files" subfolder
+of this folder to store archives and files and uses "External SD card home"
+name for this folder. Supposing an external SD card is available at
+/storage/extSdCard (it varies on different devices), the full name of
+such external SD card home will be
+/storage/extSdCard/Android/data/com.rarlab.rar/files.</p>
+
+<p>For devices with external SD card and Android 4.4 links to external
+SD card root folder (read only) and to external SD card home (writable) are
+added to "Favorites" in <a href="navigation_panel.html">navigation panel</a>
+after fresh RAR install. Also you may force RAR to create these links
+by deleting all favorite items in navigation panel.</p>
+
+<p>Please be aware that when you uninstall RAR or clear RAR data in Android
+application manager, contents of external SD card home folder and its
+subfolders is removed completely. Copy all important files from this folder
+to another location before taking such actions.</p>
+
+</html>

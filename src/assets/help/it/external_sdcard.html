@@ -1,0 +1,14 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Supporto scheda SD esterna</h3>
+
+<p>Questo argomento si riferisce alle schede di memoria SD esterne rimovibili, presenti in alcuni dispositivi Android, e <strong>solo se questi hanno installato la versione 4.4</strong> di Android. Le altre versioni non inseriscono delle restrizioni in scrittura sulla scheda di memoria SD esterna. RAR può scrivere in qualsiasi posizione della scheda di memoria SD interna.</p>
+<p>Per la versione 4.4 di Android solo le applicazione pre-installate dal costruttore del cellulare possono scrivere in qualsiasi cartella della scheda SD esterna. Le altre applicazioni, incluso RAR per Android, possono scrivere sulla scheda SD esterna solo nella cartella assegnata alla singola applicazione, mentre in tutte le altre cartelle possono solo leggere. Per RAR questa cartella &quot;scrivibile&quot; è "<em>Android/data/com.rarlab.rar</em>". Di questa cartella RAR utilizza la sotto-cartella &quot;files&quot; per memorizzare gli archivi e i file, e la chiama &quot;Cartella principale della scheda SD esterna&quot;. Supponendo che il percorso della scheda SD esterna è &quot;<em>/storage/extSdCard</em>&quot; (come è utilizzato da molti dispositivi Android) il percorso completo della cartella &quot;<em>files</em>&quot; di RAR su una scheda SD esterna è: &quot;<em>/storage/extSdCard/Android/data/com.rarlab.rar/files</em>&quot;</p>
+
+<p>Per i motivi di cui sopra, per i dispositivi con una scheda SD esterna e con Android 4.4, RAR, al momento dell'installazione, aggiunge nella sezione &quot;Favoriti&quot; del <a href="navigation_panel.html">pannello di navigazione</a> due collegamenti: uno alla cartella radice della scheda SD esterna (in sola lettura) ed uno alla cartella principale della scheda SD esterna (scrivibile). Potete forzare RAR a ricreare questi collegamenti, se per caso sono stati eliminati, cancellando tutti i collegamenti favoriti nel pannello di navigazione.</p>
+<p>Fate attenzione che l'intero <strong>contenuto di questa cartella principale della scheda SD esterna verrà cancellato</strong>, assieme alle sue sotto-cartelle, quando rimuovete l'applicazione RAR o eliminate i dati di RAR dal programma di gestione Applicativi. Copiate tutti i file importanti presenti in questa cartella in un'altra cartella prima d'eseguire questa azione.</p></html>

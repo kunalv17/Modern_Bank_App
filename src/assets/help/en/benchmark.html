@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Benchmark</h3>
+
+<p>This command allows to compare performance of RAR compression
+and decompression on different hardware platforms. Same versions of
+WinRAR and Android RAR share basically the same benchmark core code.
+Only user interface part of Android benchmark uses Java. CPU intensive
+operations are running as native code, so performance of Java virtual
+machine is not measured.</p>
+
+<p>First stage of algorithm generates a stream of pseudorandom numbers
+with relatively low redundancy, close to RAR performance worst case.
+This stream is passed through RAR compression and decompression algorithms.
+Decompression output is compared with source data. If any difference
+is found, "Errors found: Yes" is reported. Such errors may indicate
+hardware problems like unreliable memory. Though, do not expect this
+command to replace specialized diagnostic software. Its purpose is
+benchmarking, not hardware testing.</p>
+
+<p>Also the command window contains a size of processed data, elapsed time
+and compression speed, current and resulting, in kilobytes per second.
+Resulting speed is calculated as maximum speed for limited monitoring period
+and is not updated once set. Duration of period to determine resulting speed
+might be longer for slower hardware.</p>
+
+<p>Benchmark uses multithreaded version of RAR compression and single
+threaded implementations of other algorithms, such as decompression
+and random number generation. Since compression is the most CPU intensive
+here, resulting performance noticeably depends on a number of available
+CPU cores. By default, all available cores are used, but if you wish
+to see results for single core or limited number of CPU cores,
+you can tap on "number of threads" field to restart measurements
+with another thread number.</p>
+
+<p>It is not guaranteed that different RAR versions will report
+same compression speed values, so if you use this command to compare
+performance of different devices, ensure that you run the same RAR
+version in all tests.</p>
+
+<p>Benchmark command is never finished automatically, you need to
+close it manually. It does not use any permanent storage, all operations
+are performed in memory.</p>
+
+</html>

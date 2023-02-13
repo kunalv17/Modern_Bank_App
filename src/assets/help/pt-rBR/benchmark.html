@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Desempenho</h3>
+
+<p>Este comando permite comparar o desempenho de compressão RAR
+e descompressão em diferentes plataformas de hardware. As mesmas 
+versões do WinRAR e RAR para Android compartilham basicamente o mesmo 
+código do núcleo de referência. Apenas parte da interface do usuário 
+do desempenho do Android usa Java. Operações intensivas da CPU são 
+executadas como código nativo, por isso o desempenho da máquina virtual 
+Java não é medido.</p>
+
+<p>Primeira fase do algoritmo gera um fluxo de números pseudoaleatórios
+com relativa baixa de redundância, perto do desempenho do RAR na pior das 
+circunstâncias. Este fluxo é passado através de algoritmos de compressão e 
+descompressão do RAR. A saída de descompressão é comparada com os dados de 
+origem. Se alguma diferença for encontrada, "Erros encontrados: Sim" é relatado. 
+Esses erros podem indicar problemas de hardware, como memória não confiável. 
+No entanto, não espere que este comando substitua um software de diagnóstico 
+especializado. Sua finalidade é testes de desempenho, não de hardware.</p>
+
+<p>Além disso a janela de comando contém o tamanho dos dados processados​​, 
+tempo decorrido e velocidade de compressão, atuais e resultante, em kilobytes 
+por segundo. A velocidade resultante é calculada como velocidade máxima para o 
+período de monitoramento limitado e não é atualizado uma vez definido. A duração 
+do período para determinar a velocidade resultante pode ser mais longa para um 
+hardware mais lento.</p>
+
+<p>O desempenho usa a versão de vários segmentos da compressão RAR e exclusivas
+implementações de segmentos de outros algoritmos, como descompressão e geração de 
+números aleatórios. Como a compactação é a mais intensiva da CPU aqui, o desempenho 
+resultante notoriamente depende de uma série de núcleos de CPU disponíveis. Por 
+padrão, todos os núcleos disponíveis são usados,  mas se você quiser para ver os 
+resultados de núcleo único ou limitado número de núcleos de CPU, você pode tocar 
+em "número de segmentos" campo para reiniciar as medições com outro número de 
+segmento.</p>
+
+<p>Não é garantido que as diferentes versões do RAR vão reportar valores com a 
+mesma velocidade de compressão, por isso, se você usar este comando para comparar
+desempenho de diferentes dispositivos, certifique-se que você esteja executando a 
+mesma versão do RAR em todos os testes.</p>
+
+<p>O comando de desempenho nunca é finalizado automaticamente, você precisa fechá-lo 
+manualmente. Ele não usa qualquer armazenamento permanente, todas as operações são 
+realizadas na memória.</p>
+
+</html>

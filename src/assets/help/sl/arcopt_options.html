@@ -1,0 +1,119 @@
+﻿<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Možnosti arhiviranja: Možnosti</h3>
+
+<h4>Preveri arhivirane datoteke</h4>
+<p>Po arhiviranju preizkusi datoteke. Ta možnost je posebej uporabna, če je tudi 
+omogočeno 'Izbriši datoteke po arhiviranju'. V tem primeru bodo datoteke izbrisane
+le, če je bil arhiv uspešno preverjen-preizkušen.</p>
+
+<h4>Ustvari ločene arhive</h4>
+<p>Vsako izbrano datoteko in mapo postavi v posamezen arhiv.
+Imena arhivov so ustvarjena kot imena izbranih vnosov, ki jim sledijo ustrezne
+končnice arhivov.</p>
+
+<h4>Uporabi kontrolno vsoto datoteke BLAKE2</h4>
+<p>Celovitost podatkov datotek v arhivu RAR je zaščitena s kontrolnimi vsotami,
+izračunanimi in shranjenimi za vsako arhivirano datoteko. RAR privzeto uporablja
+32 bitno kontrolno vsoto CRC32. Če je ta možnost vklopljena, se namesto CRC32 
+uporablja 256 bitni BLAKE2sp. Čeprav je CRC32 dovolj zanesljiv za zaznavanje 
+večine napak, ima BLAKE2 še boljše lastnosti odkrivanja napak v škodo počasnejšega
+izračuna in nekoliko večje velikosti arhiva. Ta možnost je na voljo le za arhive
+v formatu RAR 5.0.</p>
+
+<h4>Prikaži čas arhiviranja</h4>
+<p>Prikaže pogovorno okno, ki vsebuje skupni čas izdelave arhiva ob uspešnem
+dokončanju operacije arhiviranja. Lahko so uporabni pri primerjanju vrednosti
+različnih načinov arhiviranja.</p>
+
+<h4>Maska imena arhiva</h4>
+<p>Pri ustvarjanju arhiva doda trenutni datumski niz v ime arhiva. Uporabno za
+dnevne varnostne kopije. Datumski niz je oblikovan s specifičnimi maskami, ki
+lahko vključujejo naslednje znake:
+</p>
+
+<table>
+
+<tr>
+<td><b>L</b></td>
+<td>leto</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>mesec</td>
+</tr>
+
+<tr>
+<td><b>MMM</b>&nbsp;</td>
+<td>mesec kot besedilni niz (Jan, Feb, Mar itn.)</td>
+</tr>
+
+<tr>
+<td><b>T</b></td>
+<td>številka tedna (teden se začne s ponedeljkom)</td>
+</tr>
+
+<tr>
+<td><b>A</b></td>
+<td>dan v tednu (ponedeljek je 1, nedelja je 7)</td>
+</tr>
+
+<tr>
+<td><b>D</b></td>
+<td>dan v mesecu</td>
+</tr>
+
+<tr>
+<td><b>E</b></td>
+<td>dan v letu</td>
+</tr>
+
+<tr>
+<td><b>U</b></td>
+<td>ure</td>
+</tr>
+
+<tr>
+<td><b>M</b></td>
+<td>minute (obravnava se kot minute, če je daljše od ur)</td>
+</tr>
+
+<tr>
+<td><b>I</b></td>
+<td>minute (obravnavajo kot minute ne glede na položaj ure)</td>
+</tr>
+
+<tr>
+<td><b>S</b></td>
+<td>sekunde</td>
+</tr>
+
+<tr>
+<td><b>N</b></td>
+<td>številka arhiva (številčna vrednost se začne z 1).
+<br>Med izdelavo arhiva, RAR poišče že obstoječi arhiv z ustvarjenim imenom
+in, če ga najde, poveča številko arhiva za 1, do ustvarjanja neuporabljenega 
+imena. Znak v obliki 'N' ni podprt pri ustvarjanju nosilcev.
+</td>
+</tr>
+</table>
+
+<p>Vsak od zgoraj naštetih oblik zapisa znakovnega niza predstavlja samo en 
+znak, dodan v ime arhiva. Na primer uporabite TT za dvomestno številko tedna 
+ali LLLL za določitev štirimestnega leta.</p>
+
+<p>Če je prvi znak v obliki niza '+', položaj datumskega niza in osnovo ime
+arhiva se zamenjata. Zato bo datum pred imenom arhiva.</p>
+
+<p>Oblika niza lahko vsebuje izbirno besedilo, obdano z znakoma '{' in '}'.
+To besedilo bo vstavljeno v ime arhiva.</p>
+
+<p>Vsi drugi znaki oblike niza so nespremenjeno dodani v ime arhiva.</p>
+
+</html>

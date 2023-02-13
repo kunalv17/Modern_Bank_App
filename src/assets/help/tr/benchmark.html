@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Kıyaslama</h3>
+
+<p>Bu komut RAR'ın farklı donanım platformlarındaki sıkıştırma ve çıkartma performansını
+kıyaslamaya imkân sağlar.
+WinRAR ve Android için RAR'ın aynı versiyonları esasında aynı kıyaslama çekirdeği kodunu paylaşır.
+Android'deki kıyaslama sadece arayüz kısmında Java kullanır. İşlemci ağırlıklı
+işlemler makine dili olarak çalışır, Java sanal
+makinesinin performansı ölçülmez.</p>
+
+<p>Neredeyse RAR'ın performansının en kötü hâli olan algoritmanın ilk safhası olabildiğince az yalancı tesâdüfî rakamlar oluşturur.
+Bu akış RAR'ın sıkıştırma ve çıkartma algoritmalarından geçer.
+Çıkartılan veri kaynak veri ile kıyaslanır. Herhangi bir farklılık
+bulunursa, "Hatâlar bulundu: Evet" şeklinde raporlanır. Böyle hatâlar güvenilmez hâfıza
+gibi sıkıntılara işâret edebilir. Fakat bu komutun mütehassıs teşhis yazılımının yerine geçmesini beklemeyin.
+Niyeti kıyaslama yapmaktır donanım test etmek değil.</p>
+
+<p>Komut penceresi işlenen verinin boyutunu, geçen zamanı, ve sâniye başına kilobytes biriminden olan mevcûd ve neticelenen sıkıştırma hızını ihtivâ eder.
+Neticelenen hız kısa bir müşahade neticesinde hâsıl olan âzamî hız olarak hesaplanır
+ve kararlaştırıldıktan sonra güncellenmez. Neticelenen hızı tespit etme müddeti daha yavaş donanımlarda uzun olabilir.</p>
+
+<p>Kıyaslama RAR sıkıştırmasının birden fazla iş parçacıklı versiyonunu ve çıkartma ve tesadüfî rakam oluşturma gibi diğer algoritmaların tek iş parçacıklı uygulamalarını kullanır.
+Burada sıkıştırma en çok İşlemci ağırlıklı olduğu için, neticelenen performans müsâid olan İşlemci çekirdeğinin adedine gözle görülür şekilde bel bağlar. Bütün müsâid çekirdekler varsayılan olarak kullanılır, fakat
+tek çekirdeğin veyâ az miktarda çekirdeğin neticelerini görmek istiyorsanız,
+ölçümleri başka bir iş parçacığı adedi ile tekrar başlatmak için "iş parçacığı adedi" yerine dokunabilirsiniz.</p>
+
+<p>Farklı RAR versiyonlarının aynı sıkıştırma hızı değerlerini raporlayacağı garanti edilmez, bu yüzden bu komutu farklı cihazların performansını kıyaslamak için kullanıyorsanız
+bütün testlerde aynı RAR versiyonunu çalıştırdığınızdan emin olun.</p>
+
+<p>Kıyaslama komutu asla kendiliğinden tamamlanmaz, bizzat kapatmanız gerekir. Herhangi bir dâimî depolama yeri kullanmaz, bütün işlemler hâfızada yerine getirilir.</p>
+
+</html>

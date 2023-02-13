@@ -1,0 +1,23 @@
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+</head>
+
+<h3>Valutazione sistema</h3>
+
+<p>Utilizzando questo comando potete ottenere un indice di velocit&agrave;
+per poter comparare le prestazioni dell'algoritmo di compressione RAR
+su differenti computer e dispositivi. Stesse versioni di WinRAR e &quot;RAR per Android&quot; condividono lo stesso algoritmo di valutazione, a parte l'interfaccia d'utente di &quot;RAR per Android&quot; che utilizza Java. Le operazioni che influiscono sulla CPU vengono eseguite con il codice nativo, quindi le prestazioni non sono influenzate dalla macchina virtuale di Java.</p>
+<p>Per prima cosa viene generato un flusso di numeri pseudo-casuali con una ridondanza relativamente bassa, una combinazione che mette a dura prova l'algoritmo di RAR. Questi dati sono passati attraverso l’algoritmo di compressione e decompressione
+  RAR ed infine i dati in uscita vengono comparati con quelli sorgenti.
+  Se viene rilevata qualche differenza RAR lo indica con “Errori
+individuati - Si”. Questi errori possono indicare un presunto problema all'hardware come della memoria RAM difettosa. In ogni caso non pensiate che questo comando sostituisca i programmi specializzati nella diagnostica: il suo scopo è di fornire solo una valutazione, non di effettuare un test dell'hardware.</p>
+<p>Il pannello dell'operazione contiene anche la dimensione dei dati processati, il tempo trascorso e la velocità di compressione, corrente e finale, in KiloByte al secondo. La velocità finale viene calcolata come massima velocità per un periodo di valutazione limitato e non viene aggiornata una volta determinata. La durata del test di valutazione dipende dalle prestazione dell'hardware del dispositivo.</p>
+<p>La Valutazione utilizza la versione multi-attuatore dell'algoritmo di compressione RAR e a singolo attuatore per gli altri algoritmi, come la scompattazione e la generazione casuale dei numeri. Siccome la compressione è l'operazione che più mette a carico le CPU, le prestazioni risultanti dipendono dal numero di CPU presenti nel processore del dispositivo. Per definizione vengono utilizzate tutte le CPU presenti ma se volete diminuirne il numero potete selezionarlo nel campo &quot;Numero attuatori&quot; e riavviare la valutazione.</p>
+<p>Non è garantito che differenti versioni di RAR riportino lo stesso indice della velocità di compressione, per questo motivo se dovete confrontare le prestazioni tra diversi dispositivi accertatevi che tutti abbiano installato la stessa versione di RAR.</p>
+<p>La Valutazione del sistema non termina mai automaticamente: dovete chiuderla manualmente. Non viene utilizzato alcun dispositivo permanente: tutte le operazioni sono eseguite nella memoria volatile.</p>
+<p>&nbsp;</p>
+
+</html>
